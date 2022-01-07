@@ -1,0 +1,37 @@
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    -moz-font-feature-settings: normal,;
+    font-feature-settings: normal,;
+    font-variant: normal;
+    font-variant: initial;
+    line-height: 1;
+
+    color: var(--red);
+}
+
+.swiper-button-next:after {
+    content: 'next';
+}
+.swiper-button-prev:after {
+    content: 'prev';
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--red);
+}

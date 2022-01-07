@@ -1,0 +1,358 @@
+.container{
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    .details {
+        background: #CCCCCC;
+        height: 283px;
+        width: 100%;
+
+        margin-top: -65px;
+        padding: 16px 0;
+        
+        display: flex;
+        justify-content: space-around;
+
+        .item {
+            width: 211px;
+
+            display: flex;
+            flex-direction: column;
+            
+
+            img {
+                margin: 0 20px;
+            }
+
+            span {
+                padding-top: 10px;
+                margin-bottom: 10px;
+                text-align: center;
+
+                font-size: 18px;
+            }
+        }
+    }
+
+    .banner1 {
+        background-image: url('../../../public/RHINO-banners_21-1920x593.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: var(--white);
+
+        width: 100%;
+        height: 593px;
+
+        display: flex;
+
+        justify-content: flex-end;
+        align-items: center;
+
+        div {
+            width: 940px;
+
+            padding: 0 134px 0 192px;
+            
+        }
+
+        
+    }
+
+    .title_name {
+        display: flex;
+        justify-content: center;
+
+        padding: 38px 0 43px;
+
+        h1 {
+            font-size: 80px;
+        }
+    }
+
+    .information {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            padding: 0 19px 0 240px;
+            margin-top: 60px;
+        }
+        
+        img {
+            height: 600px;
+        }
+    }
+
+    .frog_system {
+        height: 540px;
+
+        display: flex;
+        align-items: center;
+
+        background: #484748;
+
+        div {
+            width: 960px;
+
+            padding: 0 19px 0 240px;
+
+            h2, p {
+                color: #FFFFFF;
+            }
+
+        }
+
+        video {
+            width: 960px;
+        }
+    }
+
+    .wheels {
+        display: flex;
+        align-items: center;
+
+        div {
+            width: 960px;
+
+            padding: 0 19px 0 240px;
+        }
+
+        img {
+            width: 960px;
+        }
+    }
+
+    .base {
+        display: flex;
+        align-items: center;
+
+        div {
+            width: 960px;
+
+            padding: 0 240px 0 19px;
+        }
+    }
+
+    .pillow {
+        background-image: url('../../../public/banners_29-1920x599.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+
+        height: 599px;
+
+        div {
+            width: 960px;
+
+            padding: 0 192px 0 134px;
+        }
+    }
+
+    .gif {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .reclinium {
+        display: flex;
+        align-items: center;
+
+        background: #484748;
+
+        h2, p {
+            color: #FFFFFF;
+        }
+
+        div {
+            width: 960px;
+
+            padding: 0 19px 0 240px;
+        }
+
+        video {
+            width: 960px;
+        }
+    }
+
+    .warranty {
+        background-image: url('../../../public/RHINO-garantia-Elite-1920x600.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        height: 600px;
+
+        div {
+            width: 960px;
+
+            padding: 0 134px 0 192px;
+        }
+    }
+
+    .specifications {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background: #E6E6E6;
+
+        h2 {
+
+            margin: 24px 0 60px
+        }
+
+        .img_area {
+            display: flex;
+
+            gap: 32px;
+
+            margin-bottom: 80px;
+
+            img {
+                width: 609px;
+            }
+        }
+
+        .accordeon {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 1152px;
+            height: 74px;
+
+            padding: 0 38px;
+            margin: 0;
+
+            background: #CCCCCC;
+
+            position: relative;
+
+            h3 {
+                font-size: 26px;
+            }
+
+            svg {
+                cursor: pointer;
+            }
+
+        }
+        
+        .accordeon_infos {
+            background-color: #FFFFFF;
+
+            width: 1152px;
+            
+            display: flex;
+            justify-content: space-around;
+
+            // animation-name: slideY;
+            // animation-duration: 0.5s;
+            // overflow-y: hidden;
+            
+            table {
+                width: 100%;
+            }
+
+            td {
+                padding: 5px 16px;
+                width: 50%;
+
+                &:first-child {
+                    text-align: right;
+                }
+            }
+
+        }
+
+        .hidden {
+            display: none;
+        }
+        
+        .disclaimer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 80px;
+
+            button {
+                margin: 52px 0;
+                padding: 16px;
+                border: 1px solid #000000;
+                border-radius: 4px;
+
+                width: 558px;
+
+                font-weight: bold;
+                font-size: 16px;
+
+                background-color: transparent;
+
+                cursor: pointer;
+            }
+        }
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin: 40px 0 60px;
+
+            font-size: 48px;
+            font-weight: 400;
+        }
+
+        .rating_infos {
+            display: flex;
+            flex-direction: row;
+
+            div {
+                width: 305px;
+
+                h4 {
+                    font-size: 21px;
+                    font-weight: 400;
+                }
+
+                h1 {
+                   font-size: 96px; 
+                   padding-left: 20px;
+                }
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@keyframes slideY {
+    from{
+      transform: translateY(0%);
+    }
+  
+    to {
+        transform: translateY(100%);
+    }
+  }

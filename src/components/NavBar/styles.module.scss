@@ -1,0 +1,75 @@
+.menus {
+    display: flex;
+
+    a {
+        line-height: 100%;
+    }
+
+    .dropDownMenu {
+        position: absolute;
+        white-space: nowrap;
+        
+        top: 31px;
+        left: 0;
+
+        background-color: white;
+    }
+
+    .navItem {
+        position: relative;
+
+        padding: 0 14px;
+
+        font-size: 21px;
+        font-weight: 400;
+
+        cursor: pointer;
+
+        &:hover  {
+            color: #fc0808;
+        }
+    }
+
+    .menu_arrow {
+        margin-left: 21px;
+
+        
+    }
+
+}
+
+.spacing {
+    padding: 0.25rem;
+    z-index: 10000000000;
+}
+
+.menuButton {
+    font-size: 21px;
+    padding: 0 14px;
+    border: 0;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu_arrow {
+    margin-left: 21px;
+    vertical-align: middle;
+
+    
+}
+
+.menuItem:hover {
+    background-color: #EBEBEB;
+    color: var(--red);
+
+}
+
+.menuHead {
+    font-size: 1.1rem;
+    transition: color 0.3s;
+
+    &:hover {
+        color: var(--red);
+    }
+    
+}

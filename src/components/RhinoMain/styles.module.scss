@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    // align-items: stretch;
+
+    margin: 0 auto 2rem;
+
+    padding-top: 80px;
+
+    max-width: 1420px;
+
+    .slider {
+        width: 900px;
+        height: 600px;
+
+        position: relative;
+
+        display: flex;
+
+        align-items: stretch;
+
+        .starSection {
+            position: absolute;
+            left: 16px;
+
+            z-index: 100000000;
+        }
+
+        
+    }
+
+    .productInfo {
+        
+        background-color: #f8f8f8;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0px 1px 10px 5px #B7B7B7; 
+        box-shadow:  0px 1px 10px 5px #B7B7B7;
+        z-index: 100000;
+
+        width: 100%;
+        max-width: 520px;
+        padding: 24px;
+
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: var(--red);
+            font-size: 13px;
+        }
+
+        ul {
+            font-size: 13px;
+        }
+        
+        p {
+            font-size: 13px;
+        }
+
+        button {
+            margin-top: 16px;
+            padding: 16px;
+            width: 220px;
+            border: 0;
+            white-space: nowrap;
+
+            background-color: #fc0808;
+            color: white;
+
+            font-weight: bold;
+
+            align-self: center;
+
+            cursor: pointer;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+
+            .starSection {
+                display: flex;
+                align-items: center;
+            }
+
+            span {
+                margin-left: 8px;
+
+                font-size: 13px;
+            }
+        }
+
+        hr {
+            width: 100%;
+
+            border: 1px solid #c1c1c1;
+        }
+
+        .features {
+            margin-top: 8px;
+        }
+
+        .colorSelection {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 16px;
+
+            margin: 32px 0;
+        }
+
+        .colorBorder {
+            // border: 1px solid black;
+            width: 60px;
+            height: 60px;
+            
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            transition: filter 0.2s;
+
+            &:hover {
+                filter: brightness(0.8);
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        
+    }
+}
