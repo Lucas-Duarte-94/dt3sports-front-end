@@ -1,6 +1,8 @@
 import styles from './styles.module.scss'
 import { GoPlus } from 'react-icons/go'
 import { useState } from 'react'
+import { AiFillStar } from 'react-icons/ai';
+import { BsChevronDown } from 'react-icons/bs';
 
 export function RhinoInfos() {
     const [showTable, setShowTable] = useState(false);
@@ -293,7 +295,7 @@ export function RhinoInfos() {
                     <span>Este produto não vem montado e não inclui serviço de montagem. Acompanha manual de instrução prático.</span>
 
                     <button>
-                        <a href="https://dt3combr.sharepoint.com/:b:/s/marketing/ER1mtEdp6JtAlqYyDdjt4QEB8bQHNG5aLTwQWI60tf-JoA?e=aCWNpS" target="_blank">Download do Manual</a>
+                        <a href="https://dt3combr.sharepoint.com/:b:/s/marketing/ER1mtEdp6JtAlqYyDdjt4QEB8bQHNG5aLTwQWI60tf-JoA?e=aCWNpS" target="_blank" rel='noreferrer'>Download do Manual</a>
                     </button>
                 </div>
             </div>
@@ -306,8 +308,14 @@ export function RhinoInfos() {
                         <h1>5.0</h1>
 
                         <section>
-                            {/* estrelas */}
+                            <AiFillStar color='#fc0808' size={20}/>
+                            <AiFillStar color='#fc0808' size={20}/>
+                            <AiFillStar color='#fc0808' size={20}/>
+                            <AiFillStar color='#fc0808' size={20}/>
+                            <AiFillStar color='#fc0808' size={20}/>
+                            <BsChevronDown style={{marginLeft: '8px'}} size={20}/>
                             <p>( 35 avaliações )</p>
+                            
                         </section>
 
                         <div>
@@ -318,10 +326,54 @@ export function RhinoInfos() {
                         </div>
                     </div>
 
-                    <div>
-                        <h3>CONFORTO</h3>
-                        <h3>QUALIDADE</h3>
-                        <h3>CARACTERÍSTICAS</h3>
+                    <div className={styles.subjects}>
+                        <div className={styles.subject_rating}>
+                            <h3>CONFORTO</h3>
+                            <div className={styles.rating_grade}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span className={styles.red}></span>
+                                <span></span>
+                            </div>
+                            <div className={styles.description}>
+                                <p>POUCO CONFORTÁVEL</p>
+                                <p>MUITO CONFORTÁVEL</p>
+                            </div>
+
+                        </div>
+
+                        <div className={styles.subject_rating}>
+                            <h3>QUALIDADE</h3>
+                            <div className={styles.rating_grade}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span className={styles.red}></span>
+                            </div>
+                            <div className={styles.description}>
+                                <p>BÁSICA</p>
+                                <p>EXCEPCIONAL</p>
+                            </div>
+
+                        </div>
+
+                        <div className={styles.subject_rating}>
+                            <h3>CARACTERÍSTICAS</h3>
+                            <div className={styles.rating_grade}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span className={styles.red}></span>
+                                <span></span>
+                            </div>
+                            <div className={styles.description}>
+                                <p>FRACO</p>
+                                <p>EXCEPCIONAL</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

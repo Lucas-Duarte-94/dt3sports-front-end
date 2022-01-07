@@ -34,13 +34,13 @@ function ProdutosDropDownMenu() {
       <>
         <Menu menuButton={<MenuButton className={styles.menuButton}>Produtos <FaAngleDown className={styles.menu_arrow} /></MenuButton>} className={styles.spacing}>
             <SubMenu label="Elite Series" className={styles.menuHead} >
-                <MenuItem className={styles.menuItem}>Royce</MenuItem>
-                <MenuItem className={styles.menuItem}>Rhino</MenuItem>
-                <MenuItem className={styles.menuItem}>Prime Evo</MenuItem>
-                <MenuItem className={styles.menuItem}>Orion</MenuItem>
-                <MenuItem className={styles.menuItem}>Ônix Diamond</MenuItem>
-                <MenuItem className={styles.menuItem}>Orion Flamengo</MenuItem>
-                <MenuItem className={styles.menuItem}>Spider</MenuItem>
+                <MenuItem className={styles.menuItem} href='https://www.dt3sports.com.br/loja/elite-series/cadeira-gamer-dt3sports-royce-tecido/'>Royce</MenuItem>
+                <MenuItem className={styles.menuItem} href='https://www.dt3sports.com.br/loja/elite-series/cadeira-gamer-dt3sports-rhino/'>Rhino</MenuItem>
+                <MenuItem className={styles.menuItem} href='https://www.dt3sports.com.br/loja/elite-series/cadeira-gamer-dt3sports-prime-evo/'>Prime Evo</MenuItem>
+                <MenuItem className={styles.menuItem} href='https://www.dt3sports.com.br/loja/elite-series/cadeira-gamer-dt3sports-orion/'>Orion</MenuItem>
+                <MenuItem className={styles.menuItem} href='https://www.dt3sports.com.br/loja/elite-series/cadeira-gamer-dt3sports-onix-diamond/'>Ônix Diamond</MenuItem>
+                <MenuItem className={styles.menuItem} href='https://www.dt3sports.com.br/loja/elite-series/cadeira-gamer-dt3sports-orion-flamengo/'>Orion Flamengo</MenuItem>
+                <MenuItem className={styles.menuItem} href='https://www.dt3sports.com.br/loja/office-series/cadeira-de-escritorio-dt3-spider/'>Spider</MenuItem>
             
             </SubMenu>
   

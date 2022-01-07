@@ -1,15 +1,12 @@
 import styles from './styles.module.scss'
-import { FaUser, FaAngleDown, FaSearch, FaShoppingCart } from 'react-icons/fa'
-import { GoChevronRight } from 'react-icons/go'
+import { FaUser, FaSearch, FaShoppingCart } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
-import Link from 'next/link';
 import { useModal } from '../../contexts/modalContext';
 import { CartModal } from '../cartModal';
 import { useCart } from '../../contexts/cartContext';
 import { NavBar } from '../NavBar';
 
 export function Header() {
-    const [isShown, setIsShown] = useState(false);
     const { handleOpenModal } = useModal()
     const { cart } = useCart()
     const [totalProducts, setTotalProducts] = useState(0);
