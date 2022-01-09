@@ -1,9 +1,8 @@
 .container {
     display: flex;
     flex-direction: row;
-    // align-items: stretch;
 
-    margin: 0 auto 2rem;
+    margin: 67px auto 2rem;
 
     padding: 80px 2rem 0;
 
@@ -23,7 +22,7 @@
             position: absolute;
             left: 16px;
 
-            z-index: 100000000;
+            z-index: 10000;
         }
 
         
@@ -35,7 +34,7 @@
         border-radius: 0.5rem;
         -webkit-box-shadow: 0px 1px 10px 5px #B7B7B7; 
         box-shadow:  0px 1px 10px 5px #B7B7B7;
-        z-index: 100000;
+        z-index: 10000;
 
         width: 100%;
         max-width: 30.5rem;

@@ -1,40 +1,15 @@
 import styles from './styles.module.scss';
 import { Slider } from '../slider';
 import { useEffect, useState } from 'react';
-import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
+import { AiFillStar } from 'react-icons/ai'
 import { useCart } from '../../contexts/cartContext';
 import { api } from '../../services/api';
-
-// type KeyProps = 'red' | 'blue' | 'green' | 'orange' | 'black' | 'white';
 
 interface InfosProps {
     color: string
     available: boolean;
     urls: string[];
 }
-
-const chairImageByColor = {
-    red: ['Rhino-red2.jpg', 'Rhino-red1.jpg', 'Rhino-red5.jpg', 'Rhino-red9.jpg', 'Rhino-3-11.jpg', 'Rhino-12-11.jpg', 'Rhino-13-11.jpg', 'Rhino-15-11.jpg', 'Cotas-DT3sports-Rhino.jpg'],
-    blue: ['Rhino-blue2.jpg', 'Rhino-blue1.jpg', 'Rhino-blue5.jpg', 'Rhino-blue9.jpg', 'Rhino-3-13.jpg', 'Rhino-12-13.jpg', 'Rhino-13-13.jpg', 'Rhino-15-13.jpg', 'Cotas-DT3sports-Rhino.jpg'],
-    green: ['Rhino-green2.jpg', 'Rhino-green1.jpg', 'Rhino-green5.jpg', 'Rhino-green9.jpg', 'Rhino-3-10.jpg', 'Rhino-12-10.jpg', 'Rhino-13-10.jpg', 'Rhino-15-10.jpg', 'Cotas-DT3sports-Rhino.jpg'],
-    orange: ['Rhino-2-15.jpg', 'Rhino-1-14.jpg', 'Rhino-5-14.jpg', 'Rhino-9-14.jpg', 'Rhino-3-7.jpg', 'Rhino-12-7.jpg', 'Rhino-13-7.jpg', 'Rhino-15-7.jpg', 'Cotas-DT3sports-Rhino.jpg'],
-    black: ['Rhino-black2.jpg', 'Rhino-black1.jpg', 'Rhino-black5.jpg', 'Rhino-black9.jpg', 'Rhino-3-12.jpg', 'Rhino-12-12.jpg', 'Rhino-13-12.jpg', 'Rhino-15-12.jpg', 'Cotas-DT3sports-Rhino.jpg'],
-    white: ['Rhino-white2.jpg', 'Rhino-white1.jpg', 'Rhino-white5.jpg', 'Rhino-white9.jpg', 'Rhino-3-9.jpg', 'Rhino-12-9.jpg', 'Rhino-13-9.jpg', 'Rhino-15-9.jpg', 'Cotas-DT3sports-Rhino.jpg']
-}
-
-const inStock = {
-    red: true,
-    blue: true,
-    green: true,
-    orange: true,
-    black: false,
-    white: false
-}
-
-const price = new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(3359.90)
-const discountedPrice = new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(3359.90 * 0.90)
-
-
 
 export function RhinoMain() {
     const [infos, setInfos] = useState<InfosProps[]>([]);
@@ -87,7 +62,6 @@ export function RhinoMain() {
                 price: 3359.90,
                 imageUrl: imageUrl
             }
-            console.log(item)
             addToCart(item)
         }
 
@@ -117,7 +91,7 @@ export function RhinoMain() {
                 <div className={styles.colorSelection}>
                     { infos.map(chair => {
                         return (
-                            <div className={styles.colorBorder} onClick={() => handleChangeColor(chair.color)}>
+                            <div className={styles.colorBorder} onClick={() => handleChangeColor(chair.color)} key={chair.urls[0]}>
                                 <img src={chair.urls[0]} />
                             </div>
                         )

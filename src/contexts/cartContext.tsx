@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useMemo, useState } from "react";
 
 interface CartProviderProps {
     children: ReactNode;
@@ -39,18 +39,24 @@ const CartContext = createContext({} as CartContextProps);
 
 export function CartProvider({ children }: CartProviderProps) {
     const [cart, setCart] = useState<CartProps[]>([]);
+    const [teste, setTeste] = useState(false)
 
-    useEffect(() => {
+    function handleChanges() {
         if(cart.length === 0) {
             let storagedCart = localStorage.getItem('dt3sports-cart')
 
-            if(storagedCart) {
+            if(storagedCart && !teste) {
                 setCart(JSON.parse(storagedCart));
             }
+            setTeste(true)
 
         }else {
             localStorage.setItem('dt3sports-cart', JSON.stringify(cart))
         }
+    }
+
+    useEffect(() => {
+        handleChanges()
     }, [cart])
 
     function addToCart(item: ItemProps) { 

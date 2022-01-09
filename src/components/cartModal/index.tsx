@@ -75,19 +75,21 @@ export function CartModal({ isOpen, onRequestClose }: CartModalProps) {
                     <table>
                         {cart.map(item => {
                             return (
-                                <tr key={item.id+item.color} className={styles.itens}>
-                                    <td>
-                                        <button onClick={() => handleCart('sub', item.id, item.color)} disabled={item.amount <= 1 ? true : false}>-</button>
-                                        <span className={styles.amount}>{item.amount}</span>
-                                        <button onClick={() => handleCart('add', item.id, item.color)}>+</button>
-                                    </td>
-                                    <td>
-                                        <p>{item.name}</p>
-                                        <span className={styles.price}>{new Intl.NumberFormat('pt-br', {style: 'currency', currency: 'BRL'}).format(item.price * item.amount)}</span>
-                                    </td>
-                                    <td><img src={item.imageUrl}/></td>
-                                    <td><FaTrashAlt onClick={() => handleCart('del', item.id, item.color)} size={18} /></td>
-                                </tr>
+                                <tbody key={item.id+item.color}>
+                                    <tr className={styles.itens}>
+                                        <td>
+                                            <button onClick={() => handleCart('sub', item.id, item.color)} disabled={item.amount <= 1 ? true : false}>-</button>
+                                            <span className={styles.amount}>{item.amount}</span>
+                                            <button onClick={() => handleCart('add', item.id, item.color)}>+</button>
+                                        </td>
+                                        <td>
+                                            <p>{item.name}</p>
+                                            <span className={styles.price}>{new Intl.NumberFormat('pt-br', {style: 'currency', currency: 'BRL'}).format(item.price * item.amount)}</span>
+                                        </td>
+                                        <td><img src={item.imageUrl}/></td>
+                                        <td><FaTrashAlt onClick={() => handleCart('del', item.id, item.color)} size={18} /></td>
+                                    </tr>
+                                </tbody>
                             )
                         })}
                     </table>

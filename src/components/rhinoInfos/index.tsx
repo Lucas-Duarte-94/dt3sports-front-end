@@ -178,116 +178,168 @@ export function RhinoInfos() {
                     <GoPlus size="32px" onClick={() => setShowTable(!showTable)} />
 
                 </div>
-                <div className={showTable ? styles.accordeon_infos : styles.hidden }>
-                    <table>
-                        <tr>
-                            <td>
-                                <strong>Modelo</strong>
-                            </td>
-                            <td>
-                                <strong>Rhino</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Série</strong></td>
-                            <td><span>Elite Series</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cores</strong></td>
-                            <td><span>Black, Blue, Green, Red, White, Orange</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Revestimento</strong></td>
-                            <td><span>Couro PU Premium</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Estrutura</strong></td>
-                            <td><span>100% Aço 2.0mm</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Densidade do estofamento</strong></td>
-                            <td><span>65D</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Espessura do assento</strong></td>
-                            <td><span> 12cm</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Braço</strong></td>
-                            <td><span>4D</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Almofadas</strong></td>
-                            <td><span>Pescoço e lombar</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cilindro</strong></td>
-                            <td><span>Classe 4, 100mm</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Rodas</strong></td>
-                            <td><span>Nylon com acabamento em PU, 75mm</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Base</strong></td>
-                            <td><span>Alumínio</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Mecanismo</strong></td>
-                            <td><span>Frog</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Função rocking</strong></td>
-                            <td><span>20º</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Trava rocking</strong></td>
-                            <td><span>Sim</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Reclinação de encosto</strong></td>
-                            <td><span>160º</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Peso máximo recomendado</strong></td>
-                            <td><span>200kg</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Altura máxima recomendada</strong></td>
-                            <td><span>2.10m</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Garantia geral</strong></td>
-                            <td><span>1 ano</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Garantia da estrutura</strong></td>
-                            <td><span>6 anos</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Garantia base e rodas</strong></td>
-                            <td><span>3 anos</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Garantia cilindro de gás</strong></td>
-                            <td><span>2 anos</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Certificações</strong></td>
-                            <td><span>BIFMA, EN 1335, TUV</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Peso líquido</strong></td>
-                            <td><span>30.00kg</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Peso bruto</strong></td>
-                            <td><span>35.00kg</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Dimensões da caixa</strong></td>
-                            <td><span>940 x 810 x 410 mm</span></td>
-                        </tr>
+                <div className={styles.accordeon_infos }>
+                    <table className={showTable ? styles._open : ''}>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Modelo</strong>
+                                </td>
+                                <td>
+                                    <strong>Rhino</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Série</strong></td>
+                                <td><span>Elite Series</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Cores</strong></td>
+                                <td><span>Black, Blue, Green, Red, White, Orange</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Revestimento</strong></td>
+                                <td><span>Couro PU Premium</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Estrutura</strong></td>
+                                <td><span>100% Aço 2.0mm</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Densidade do estofamento</strong></td>
+                                <td><span>65D</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Espessura do assento</strong></td>
+                                <td><span> 12cm</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Braço</strong></td>
+                                <td><span>4D</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Almofadas</strong></td>
+                                <td><span>Pescoço e lombar</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Cilindro</strong></td>
+                                <td><span>Classe 4, 100mm</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Rodas</strong></td>
+                                <td><span>Nylon com acabamento em PU, 75mm</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Base</strong></td>
+                                <td><span>Alumínio</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Mecanismo</strong></td>
+                                <td><span>Frog</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Função rocking</strong></td>
+                                <td><span>20º</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Trava rocking</strong></td>
+                                <td><span>Sim</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Reclinação de encosto</strong></td>
+                                <td><span>160º</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Peso máximo recomendado</strong></td>
+                                <td><span>200kg</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Altura máxima recomendada</strong></td>
+                                <td><span>2.10m</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Garantia geral</strong></td>
+                                <td><span>1 ano</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Garantia da estrutura</strong></td>
+                                <td><span>6 anos</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Garantia base e rodas</strong></td>
+                                <td><span>3 anos</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Garantia cilindro de gás</strong></td>
+                                <td><span>2 anos</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Certificações</strong></td>
+                                <td><span>BIFMA, EN 1335, TUV</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Peso líquido</strong></td>
+                                <td><span>30.00kg</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Peso bruto</strong></td>
+                                <td><span>35.00kg</span></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td><strong>Dimensões da caixa</strong></td>
+                                <td><span>940 x 810 x 410 mm</span></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div className={styles.disclaimer}>
@@ -376,6 +428,7 @@ export function RhinoInfos() {
                         </div>
                     </div>
                 </div>
+                <button>Avaliar Produto</button>
             </div>
         </div>
     )

@@ -81,6 +81,8 @@ a {
   border-radius: 0.25rem;
   border: 0;
 
+  z-index: 100000000;
+
   animation-name: slide;
   animation-duration: 0.5s;
 }
